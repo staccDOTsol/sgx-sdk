@@ -4,7 +4,7 @@ use anchor_lang::prelude::*;
 use solana_sdk::{instruction::Instruction, pubkey, pubkey::Pubkey};
 use switchboard_solana::{function_verify, generate_signer};
 
-const DEMO_PID: Pubkey = pubkey!("4ih7pcGkVT2HBJuXqTFemhyd73BQktBkuKXyrbRZn22v");
+const DEMO_PID: Pubkey = pubkey!("GSbisrD6tyxMkUJgCXWMmDz6S8nYzcabdinPujcfu5zF");
 
 // #[derive(Clone, AnchorSerialize, AnchorDeserialize, Debug, Default)]
 // pub struct PingParams {

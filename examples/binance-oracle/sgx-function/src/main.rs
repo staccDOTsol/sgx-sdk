@@ -17,7 +17,8 @@ async fn main() {
     // Should  be under 700 bytes after serialization
     let (state_pubkey, _bump) =
         Pubkey::find_program_address(&[b"BINANCEORACLE"], &binance_oracle::ID);
-    let symbols = ["BTCUSDC", "ETHUSDC", "SOLUSDC"];
+    let symbols = ["BTCUSDT", "ETHUSDT", "ADAUSDT", "BNBUSDT", "XRPUSDT", "SOLUSDT", "DOTUSDT", "UNIUSDT", "LINKUSDT", "LTCUSDT", "BCHUSDT", "XLMUSDT", "DOGEUSDT", "ETCUSDT", "VETUSDT", "TRXUSDT", "EOSUSDT", "FILUSDT", "AAVEUSDT", "XTZUSDT", "THETAUSDT", "ATOMUSDT", "XMRUSDT", "NEOUSDT", "MIOTAUSDT", "MKRUSDT", "BUSDUSDT", "CROUSDT", "ALGOUSDT", "LEOUSDT", "BSVUSDT", "AVAXUSDT", "COMPUSDT", "HTUSDT", "RUNEUSDT", "KLAYUSDT", "SNXUSDT", "FTTUSDT", "DCRUSDT", "ZECUSDT", "CHZUSDT", "EGLDUSDT", "WAVESUSDT", "NEARUSDT", "HOTUSDT", "HNTUSDT", "DASHUSDT", "ZILUSDT", "ENJUSDT", "GRTUSDT", "MANAUSDT", "RVNUSDT", "ZENUSDT", "BATUSDT", "ONEUSDT", "SUSHIUSDT", "KSMUSDT", "ICXUSDT", "BTGUSDT", "STXUSDT", "NEXOUSDT", "LUNAUSDT", "RSRUSDT", "DGBUSDT", "CAKEUSDT", "ONTUSDT", "BNTUSDT", "QTUMUSDT", "SCUSDT", "SXPUSDT", "UMAUSDT", "ZRXUSDT", "OKBUSDT", "KNCUSDT", "ANKRUSDT", "IOSTUSDT", "CELOUSDT", "LSKUSDT", "WAXPUSDT", "RENUSDT", "NANOUSDT", "CRVUSDT", "HUSDUSDT", "ARUSDT", "SKLUSDT", "BALUSDY"];
+        
     let tickers: Vec<binance::Ticker> = binance::fetch_prices(symbols.to_vec()).await.unwrap();
     println!("{:#?}", tickers);
     let ixs: Vec<solana_program::instruction::Instruction> = symbols

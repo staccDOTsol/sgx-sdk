@@ -4,7 +4,7 @@ use switchboard_solana::AttestationQueueAccountData;
 pub mod actions;
 pub use actions::*;
 
-declare_id!("4ih7pcGkVT2HBJuXqTFemhyd73BQktBkuKXyrbRZn22v");
+declare_id!("GSbisrD6tyxMkUJgCXWMmDz6S8nYzcabdinPujcfu5zF");
 
 const PROGRAM_SEED: &[u8] = b"BINANCEORACLE";
 

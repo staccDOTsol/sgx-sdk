@@ -6,8 +6,8 @@ edition = "2021"
 [workspace]
 
 [dependencies]
-# switchboard-solana = "0.3.10"
-switchboard-solana = { path = "../../../../../switchboard/sbv2-solana/rust/switchboard-solana" }
+switchboard-solana = "0.3.10"
+#switchboard-solana = { path = "../../../../../switchboard/sbv2-solana/rust/switchboard-solana" }
 tokio = "1.26.0"
 futures = "0.3.28"
 chrono = "0.4.24"
